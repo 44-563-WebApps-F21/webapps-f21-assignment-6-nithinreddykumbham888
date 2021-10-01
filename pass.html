@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+
+<h2>Pass phraseby Nithin Reddy Kumbham</h2>
+
+
+<form>
+    <label for="form1_age">Enter the secret phrase </label>
+    <input type ="password" id="form1_age" name="form1_age" min=10 max=50 step=2 value="Let me in"> <br>
+
+    <label for="form1_nick">Enter a phrase</label>
+    <input type ="text" id="form1_nick" name="form1_nick" autofocus> <br>
+
+    <input type="button" onclick="processPhrase()" value="Check the phrase">
+</form>
+
+
+<p id="result">This text will be replaced</p>
+
+<script>
+let correct = 0;
+let wrong = 0; 
+
+function processPhrase(){
+    console.log("Getting form values")
+    age = document.getElementById("form1_age").value
+    nick = document.getElementById("form1_nick").value
+    if(age==nick){
+        correct++;
+        alert("Access allowed");
+    }
+    if(age!=nick){
+        wrong++;
+        alert("Access denied");
+    }
+    
+    out = document.getElementById("result")
+    if(age==nick){
+        out.innerHTML = correct;
+    } else {
+        out.innerHTML = wrong;
+    }
+}
+</script>
+
+</body>
+</html> 

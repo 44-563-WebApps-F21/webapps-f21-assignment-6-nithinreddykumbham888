@@ -20,11 +20,14 @@
 
 
 <p id="result">This text will be replaced</p>
+<div>
+    <img onclick="newImage()" id="imagewere" src="./Animals_images/Kangroo.jpg" alt="Kangroo" width="200" height="200"/>
+</div>
 
 <script>
 let correct = 0;
 let wrong = 0; 
-
+let usingimage = 1;
 function processPhrase(){
     console.log("Getting form values")
     age = document.getElementById("form1_age").value
@@ -37,15 +40,35 @@ function processPhrase(){
         wrong++;
         alert("Access denied");
     }
-    
+
     out = document.getElementById("result")
     if(age==nick){
         out.innerHTML = correct;
     } else {
-        out.innerHTML = wrong;
+        out.innerHTML = wrong;   
+    }
+}
+function newImage(){
+    switch(usingimage){
+       case 1:
+         var image = document.getElementById("imagewere");
+         image.src = "./Animals_images/Monkey.jpeg";
+           usingimage++;
+           break; 
+        case 2:
+         var image = document.getElementById("imagewere");
+         image.src = "./Animals_images/Kangroo.jpg";
+           usingimage++;
+           break; 
+        case 3:
+         var image = document.getElementById("imagewere");
+         image.src = "./Animals_images/Antelope.jfif";
+           usingimage++;
+           break;    
     }
 }
 </script>
+
 
 </body>
 </html> 

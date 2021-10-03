@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <title>Airthemetic JavaScript</title>
+<body>
+
+<h2>Nithin Reddy Kumbham computes</h2>
+
+<form>
+    <label for="base">Enter a base </label>
+    <input type ="number" id="base" name="base" value=10> <br>
+
+    <label for="exponent">Enter an exponent </label>
+    <input type ="number" id="exponent" name="exponent" value=2 autofocus> <br>
+
+    <input type="button" onclick="powers()" value="Compute">
+</form>
+
+
+<p id="result"></p>
+
+<script> 
+
+function powers(){
+    console.log("Getting form values")
+    base1 = document.getElementById("base").value  
+    exponent1 = document.getElementById("exponent").value
+    //var r=`Powers of ${base1} are : `
+    var r = "powers of "+base1+" are: "
+    result=1
+    out = document.getElementById("result")
+    for(let i=1;i<=exponent1;i++){
+       result *= base1;
+        r += result+ " "
+    }
+    out.innerHTML=r;
+}
+</script>
+
+</body>
+</html> 

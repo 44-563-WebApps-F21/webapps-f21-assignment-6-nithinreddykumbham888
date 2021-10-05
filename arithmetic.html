@@ -14,9 +14,27 @@
 
     <input type="button" onclick="powers()" value="Compute">
 </form>
-
-
 <p id="result"></p>
+<br><br>
+
+<form>
+    <input type="radio" id="plus" onclick="processRadio()" name="ope" value="plus">
+    <label for="plus">+</label></br>
+  
+    <input type="radio" id="minus" onclick="processRadio()" name="ope" value="minus">
+    <label for="minus">-</label></br>
+  
+    <input type="radio" id="times" onclick="processRadio()" name="ope" value="times">
+    <label for="times">*</label></br>
+
+    <input type="radio" id="divide" onclick="processRadio()" name="ope" value="divide">
+    <label for="divide">/</label></br>
+
+    
+  </form>
+
+
+<p id="result2">This will be replaced</p>
 
 <script> 
 
@@ -25,7 +43,7 @@ function powers(){
     base1 = document.getElementById("base").value  
     exponent1 = document.getElementById("exponent").value
     //var r=`Powers of ${base1} are : `
-    var r = "powers of "+base1+" are: "
+    var r = "powers of "+base1+" are :"
     result=1
     out = document.getElementById("result")
     for(let i=1;i<=exponent1;i++){
@@ -34,7 +52,39 @@ function powers(){
     }
     out.innerHTML=r;
 }
+
+function processRadio(){
+    
+    base1 = document.getElementById("base").value  
+    exponent1 = document.getElementById("exponent").value
+    var p=document.getElementById("plus").checked
+    var q=document.getElementById("minus").checked
+    var r=document.getElementById("times").checked
+    var t=document.getElementById("divide").checked
+    
+    if(p){
+        console.log('plus')
+        plus = Number(base1) + Number(exponent1);
+        document.getElementById("result2").innerHTML = plus
+    }
+    if(q){
+        console.log('minus')
+        minus = Number(base1) - Number(exponent1);
+        document.getElementById("result2").innerHTML = minus
+    }
+    if(r){
+        console.log('timer')
+        timer = Number(base1) * Number(exponent1);
+        document.getElementById("result2").innerHTML = timer
+    }
+    if(t){
+        console.log('divide')
+        divide = Number(base1) / Number(exponent1);
+        document.getElementById("result2").innerHTML = divide
+    }
+}
 </script>
 
 </body>
 </html> 
+

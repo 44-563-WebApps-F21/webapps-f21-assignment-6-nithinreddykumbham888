@@ -4,6 +4,6 @@ Assignment introduction  and DOM
 **Hosted at**
 [URL Link to Pass.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/pass.html)<br><br>
 **Hosted at**
-[URL Link to airthmetic.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/airthmetic.html)<br><br>
+[URL Link to arithmetic.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/arithmetic.html)<br><br>
 **Hosted at**
 [URL Link to car.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/car.html)

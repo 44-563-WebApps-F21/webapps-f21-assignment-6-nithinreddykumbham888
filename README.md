@@ -2,8 +2,8 @@
 Assignment introduction  and DOM
 ### A HTML file with Java Script introduction  and DOM
 **Hosted at**
-[URL Link to Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/pass.html)<br>
+[URL Link to Pass.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/pass.html)<br><br>
 **Hosted at**
-[URL Link to Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/airthmetic.html)
+[URL Link to airthmetic.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/airthmetic.html)<br><br>
 **Hosted at**
-[URL Link to Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/car.html)
+[URL Link to car.html Page](https://44-563-webapps-f21.github.io/webapps-f21-assignment-6-nithinreddykumbham888/car.html)

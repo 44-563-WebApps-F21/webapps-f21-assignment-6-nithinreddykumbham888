@@ -29,11 +29,17 @@
 <input type="text" id="property" name="property_1" value="color"><br>
 
 <label for="properte">Enter a value</label>
-<input type="text" id="properte" name="property_2"><br>
-
-<button onclick="updateCar()">Update the car</button>
+<input type="text" id="properte" name="property_2" value="number"><br>
 </form>
+<button onclick="updateCar()">Update the car</button>
 
+<p id="result1"></p>
+
+<!-- Add in a function updateCar() to the script from the previous part.
+a.It will get the value from property input element.
+b.It will get the value from the value input element.
+c.It will set the property of my_car with the given value.  (Use the form my_car[...] = ...)
+d.Replace the innerHTML for the tagged element with my_car. -->
 
 
 <script> 
@@ -44,7 +50,7 @@ function orderCar(){
     var b = document.getElementById("check_box2").checked
     var c = document.getElementById("check_box3").checked
     if(a){
-        my_car.electric = document.getElementById("check_box1").checked
+        my_car.electric = a
         console.log(my_car)
     }
     else{
@@ -52,7 +58,7 @@ function orderCar(){
         console.log(my_car)
     }
     if(b){
-        my_car.ac = document.getElementById("check_box2").checked
+        my_car.ac = b
         console.log(my_car)
     }
     else{
@@ -60,7 +66,7 @@ function orderCar(){
         console.log(my_car)
     }
     if(c){
-        my_car.gps = document.getElementById("check_box3").checked
+        my_car.gps = c
         console.log(my_car)
     }
     else{
@@ -68,6 +74,15 @@ function orderCar(){
         console.log(my_car)
     }
     document.getElementById("result").innerHTML = "Electric : " + my_car.electric + ", "+ "AC : " + my_car.ac+ ", "+"GPS : " + my_car.gps;
+}
+
+function updateCar(){
+    var a = document.getElementById("property").value
+    var b = document.getElementById("properte").value
+    my_car.color = a
+    my_car.number = b
+    console.log(my_car)
+    document.getElementById("result1").innerHTML ="Colour : " + my_car.color + "\n" + "Number : " + my_car.number
 }
 </script>
 

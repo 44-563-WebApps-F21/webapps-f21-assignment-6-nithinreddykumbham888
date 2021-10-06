@@ -37,20 +37,18 @@
 <p id="result2">This will be replaced</p>
 
 <script> 
-
+let power = []
 function powers(){
-    console.log("Getting form values")
     base1 = document.getElementById("base").value  
     exponent1 = document.getElementById("exponent").value
-    //var r=`Powers of ${base1} are : `
-    var r = "powers of "+base1+" are :"
     result=1
-    out = document.getElementById("result")
     for(let i=1;i<=exponent1;i++){
        result *= base1;
-        r += result+ " "
+        power.push( result );
+        console.log(power)
     }
-    out.innerHTML=r;
+    document.getElementById("result").innerHTML = "powers of "+base1+" are : " + power;
+    
 }
 
 function processRadio(){
@@ -65,23 +63,24 @@ function processRadio(){
     if(p){
         console.log('plus')
         plus = Number(base1) + Number(exponent1);
-        document.getElementById("result2").innerHTML = plus
+        document.getElementById("result2").innerHTML = "Addition : "+ plus
     }
     if(q){
         console.log('minus')
         minus = Number(base1) - Number(exponent1);
-        document.getElementById("result2").innerHTML = minus
+        document.getElementById("result2").innerHTML = "Subraction : " + minus
     }
     if(r){
         console.log('timer')
         timer = Number(base1) * Number(exponent1);
-        document.getElementById("result2").innerHTML = timer
+        document.getElementById("result2").innerHTML = "Multiply : " + timer
     }
     if(t){
         console.log('divide')
         divide = Number(base1) / Number(exponent1);
-        document.getElementById("result2").innerHTML = divide
+        document.getElementById("result2").innerHTML = "Divide : " + divide
     }
+
 }
 </script>
 
